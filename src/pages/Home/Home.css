@@ -1,0 +1,49 @@
+.home-main {
+    margin-top: calc(0.5rem*2 + 0.85rem*2 + 1.5rem + 2rem);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-main form {
+    padding: 0.25rem 0.5rem;
+    border: solid 1px var(--border-color);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-main form input {
+    border-style: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.home-main form .svg-outer-btn{
+    border: none;
+    background-color: transparent;
+    width: 1rem;
+    text-align: center;
+}
+
+.home-main .card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,  minmax(12rem, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-main{
+        grid-gap: 3rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .home-main .card-container{
+        grid-gap: 3rem;
+    }
+  }

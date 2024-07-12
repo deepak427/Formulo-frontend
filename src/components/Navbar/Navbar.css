@@ -1,0 +1,60 @@
+.main-nav {
+  background-color: var(--bg-secondary);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  z-index: 5;
+  border-bottom: solid 3px orange;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  max-width: 1366px;
+  margin: auto;
+  width: 100%;
+}
+
+.main-nav .nav-container h2 {
+  color: var(--text-secondary);
+  margin-right: 2.5rem;
+}
+
+.nav-container .links-container .nav-links {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-container .buttons-container {
+    display: flex;
+  margin-left: auto;
+}
+
+.nav-container .buttons-container .nav-btn {
+  display: block;
+  padding: 0.85rem 0.6rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.nav-container .buttons-container .nav-btn-book {
+  background-color: rgba(255, 255, 255, 0.17);
+  color: var(--text-secondary);
+}
+
+.nav-container .buttons-container .nav-btn-test {
+  background-color: #ffffff;
+  color: var(--text-primary);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links{
+    display: none;
+  }
+}
